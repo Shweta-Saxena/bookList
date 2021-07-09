@@ -1,0 +1,72 @@
+.tablecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    box-shadow: 0 0 3px rgb(0 0 0 / 30%);
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 15px 10px;
+    color: white;
+    background: #1D7874;
+    border: 2px solid #777;
+
+}
+.tableHeader{
+    padding: 0px 15px;
+    width: 15%;
+}
+.paginationItem {
+    background: #1d7874;
+    border: 2px solid #1d7874;
+    padding: 10px 15px;
+    border-radius: 50%;
+    height: 30px;
+    color: white;
+    width: 30px;
+    position: relative;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+  }
+  .paginationItem.active {
+    border: 1px solid #1d7874;
+    color: #1d7874;
+    pointer-events: none;
+    background-color: white;
+  }
+  .prev, .next {
+    background: #1d7874;
+    border: none;
+    /* padding: 10px; */
+    color: #fff;
+    /* color: blue; */
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgb(0 0 0 / 40%);
+    margin: 0 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 32px;
+}
+.prev.disabled, .next.disabled {
+  pointer-events: none;
+  box-shadow: none;
+  color: lightyellow;
+  font-weight: bolder;
+}
+.paginationItem span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tableBody {
+  background-color: antiquewhite;
+  padding: 8px 25px;
+  border-bottom: 1px solid #1d7874;
+}
